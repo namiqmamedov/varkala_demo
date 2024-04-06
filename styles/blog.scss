@@ -1,0 +1,188 @@
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.parallax-mirror{
+    top: -129px !important;
+    height: 544px !important;
+}
+
+.hero{
+    .parallax-content{
+        .breadcrumb-item{
+            padding-bottom: 10px;
+
+            .old-link{
+                color: #bcac76 !important;
+                
+                &:hover{
+                    color: #9a884b !important;
+                    text-decoration: underline !important;
+                }
+            }
+    
+            i{
+                color: #868e96 !important;
+            }
+    
+            .main-link{
+                color: #868e96 !important;
+            }
+        }
+
+        .title{
+            font-size: 56px;
+            font-weight: bold;
+        }
+
+        .description{
+            padding-top: 24px;
+            font-size: 20px;
+            font-weight: normal;
+            color: #212529 !important;
+        }
+    }
+}
+
+.blog-index{
+    .blog-card{
+
+        .card-wrapper{
+            text-align: left;
+            padding-left: 2rem;
+        }
+
+        .text-dark{
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px !important;
+
+            &:hover{
+                text-decoration: underline !important;
+            }
+
+        }
+        .full-info{
+
+            p{
+                a{
+                    color: #bcac76 !important;
+                    text-transform: uppercase;
+
+                    &:hover{
+                        text-decoration: underline !important;
+                    } 
+
+                    padding-right: 8px;
+                }
+            }
+        }
+
+        img{
+            width: 306px;
+            text-align: center;
+        }
+
+        .item{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .parallax-mirror{
+        top: -100px !important;
+    }
+
+    .parallax-window{
+        padding-top: 61px;
+
+        a{
+            font-size: 14px;
+        }
+
+        .title{
+            font-size: 20px !important;
+        }
+    }
+
+
+    .blog-index{
+        padding-top: 90px;
+        .blog-card{
+            img{
+                width: 100%;
+            }
+
+            .card-wrapper{
+                padding-left: 0rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .parallax-mirror{
+        top: -100px !important;
+    }
+
+    .parallax-window{
+        padding-top: 61px;
+
+        a{
+            font-size: 14px;
+        }
+
+        .title{
+            font-size: 20px !important;
+        }
+    }
+
+
+    .blog-index{
+        padding-top: 90px;
+
+        .blog-card{
+            img{
+                width: 225px;
+            }
+            
+            .card-wrapper{
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .parallax-mirror{
+        top: -100px !important;
+    }
+
+    .parallax-window{
+        padding-top: 109px;
+    }
+
+
+    .blog-index{
+        padding-top: 90px;
+
+        .blog-card{
+            img{
+                width: 225px;
+            }
+            
+            .card-wrapper{
+                padding-left: 1rem;
+            }
+        }
+    }
+}

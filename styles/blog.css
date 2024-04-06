@@ -1,0 +1,134 @@
+.parallax-window {
+  min-height: 600px;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.parallax-mirror {
+  top: -129px !important;
+  height: 544px !important;
+}
+
+.hero .parallax-content .breadcrumb-item {
+  padding-bottom: 10px;
+}
+.hero .parallax-content .breadcrumb-item .old-link {
+  color: #bcac76 !important;
+}
+.hero .parallax-content .breadcrumb-item .old-link:hover {
+  color: #9a884b !important;
+  text-decoration: underline !important;
+}
+.hero .parallax-content .breadcrumb-item i {
+  color: #868e96 !important;
+}
+.hero .parallax-content .breadcrumb-item .main-link {
+  color: #868e96 !important;
+}
+.hero .parallax-content .title {
+  font-size: 56px;
+  font-weight: bold;
+}
+.hero .parallax-content .description {
+  padding-top: 24px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #212529 !important;
+}
+
+.blog-index .blog-card .card-wrapper {
+  text-align: left;
+  padding-left: 2rem;
+}
+.blog-index .blog-card .text-dark {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px !important;
+}
+.blog-index .blog-card .text-dark:hover {
+  text-decoration: underline !important;
+}
+.blog-index .blog-card .full-info p a {
+  color: #bcac76 !important;
+  text-transform: uppercase;
+  padding-right: 8px;
+}
+.blog-index .blog-card .full-info p a:hover {
+  text-decoration: underline !important;
+}
+.blog-index .blog-card img {
+  width: 306px;
+  text-align: center;
+}
+.blog-index .blog-card .item {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .parallax-mirror {
+    top: -100px !important;
+  }
+  .parallax-window {
+    padding-top: 61px;
+  }
+  .parallax-window a {
+    font-size: 14px;
+  }
+  .parallax-window .title {
+    font-size: 20px !important;
+  }
+  .blog-index {
+    padding-top: 90px;
+  }
+  .blog-index .blog-card img {
+    width: 100%;
+  }
+  .blog-index .blog-card .card-wrapper {
+    padding-left: 0rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .parallax-mirror {
+    top: -100px !important;
+  }
+  .parallax-window {
+    padding-top: 61px;
+  }
+  .parallax-window a {
+    font-size: 14px;
+  }
+  .parallax-window .title {
+    font-size: 20px !important;
+  }
+  .blog-index {
+    padding-top: 90px;
+  }
+  .blog-index .blog-card img {
+    width: 225px;
+  }
+  .blog-index .blog-card .card-wrapper {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .parallax-mirror {
+    top: -100px !important;
+  }
+  .parallax-window {
+    padding-top: 109px;
+  }
+  .blog-index {
+    padding-top: 90px;
+  }
+  .blog-index .blog-card img {
+    width: 225px;
+  }
+  .blog-index .blog-card .card-wrapper {
+    padding-left: 1rem;
+  }
+}/*# sourceMappingURL=blog.css.map */

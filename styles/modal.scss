@@ -1,0 +1,534 @@
+.modal-dialog {
+    width: 75% !important;
+    max-width: 100% !important;
+
+    .modal-content {
+        height: 750px;
+        border-radius: 0px !important;
+    }
+
+    .modal-body {
+
+        .type-btns {
+            margin-bottom: 45px;
+
+            button {
+                border: none;
+                color: #bcac76;
+                border: 1px solid #bcac76;
+                background: transparent;
+                padding: 4px 9px;
+                letter-spacing: .3em;
+                font-size: 12.8px;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    color: black !important;
+                    background: #bcac76;
+                    border: 1px solid #bcac76;
+                }
+            }
+
+            button.active {
+                background-color: #bcac76;
+                color: #000;
+            }
+        }
+
+        .detail-option {
+            font-weight: bold;
+
+            span {
+                font-weight: normal;
+                font-size: 12.8px;
+            }
+        }
+
+        .select-menu {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        .select-menu .select-btn {
+            display: flex;
+            height: 44px;
+            background: #fff;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 400;
+            align-items: center;
+            cursor: pointer;
+            justify-content: space-between;
+            border: 1px solid #dee2e6;
+
+            .sBtn-text {
+                letter-spacing: .3em;
+                font-size: 13px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .select-menu .options {
+            position: absolute;
+            width: 222px;
+            overflow-y: auto;
+            max-height: 295px;
+            padding: 10px;
+            background: #fff;
+            visibility: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation-name: fadeInDown;
+            -webkit-animation-name: fadeInDown;
+            animation-duration: 0.35s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 0.35s;
+            -webkit-animation-fill-mode: both;
+        }
+
+        .select-menu .options .option {
+            display: flex;
+            height: 40px;
+            cursor: pointer;
+            padding: 0 6px;
+            align-items: center;
+            background: #fff;
+            transition: .3s ease-in-out;
+        }
+
+        .select-menu .options .option:hover {
+            .option-text {
+                color: #9a884b;
+            }
+        }
+
+        .select-menu .options .option i {
+            font-size: 25px;
+            margin-right: 12px;
+        }
+
+        .select-menu .options .option .option-text {
+            font-size: 15px;
+            color: #333;
+        }
+
+        .select-btn i {
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .select-menu.active .select-btn i {
+            transform: rotate(-180deg);
+        }
+
+        .select-menu.active .options {
+            display: block;
+            opacity: 0;
+            z-index: 10;
+            animation-name: fadeInUp;
+            -webkit-animation-name: fadeInUp;
+            animation-duration: 0.4s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 0.4s;
+            -webkit-animation-fill-mode: both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 30px, 0);
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translate3d(0, 20px, 0);
+                opacity: 0;
+            }
+        }
+
+        .swiper-modal {
+            height: 750px;
+        }
+
+        .close-btn {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+
+            span{
+                font-size: 0;
+            }
+        }
+
+        // .btn-close {
+        //         display: block;
+        //         transform: rotate(180deg); 
+        // }
+
+        .btn-close {
+            display: block;
+            width: 20px; /* Örnek olarak genişlik */
+            height: 20px; /* Örnek olarak yükseklik */
+            transition: transform 0.3s ease; /* Dönme efektinin süresi ve geçiş türü */
+        }
+        
+        .btn-close:hover {
+            transform: rotate(180deg);
+        }
+
+        #main-image {
+            width: 538px !important;
+            height: 538px !important;
+            background-size: cover;
+            margin-right: 25px !important;
+        }
+
+        #thumb-image {
+            background-size: cover;
+            width: 99.75px !important;
+        }
+
+        .gallery-top {
+            position: relative;
+            height: 550px;
+
+            .badge {
+                position: absolute;
+                top: 3%;
+                left: 17px;
+                right: 0;
+                width: 51px;
+                z-index: 111;
+                display: inline-block;
+                padding: 5px 5px;
+                color: #000;
+                background-color: #bcac76;
+            }
+
+            .badge-dark {
+                position: absolute;
+                top: 12%;
+                left: 17px;
+                right: 0;
+                width: 45px;
+                z-index: 111;
+                display: inline-block;
+                padding: 5px 5px;
+                color: #fff;
+                background-color: #000;
+            }
+        }
+
+        #thumb-image {
+            // width: 100px !important;
+            height: 98px !important;
+        }
+
+
+        .modal-wrapper {
+            padding: 0 8%;
+
+            h2 {
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            .price-modal {
+                justify-content: space-between;
+
+                ul {
+                    display: flex;
+                    gap: 1rem;
+                }
+
+                .text-muted {
+                    padding-top: 2px;
+                }
+            }
+
+
+            .list-inline {
+                .fa {
+                    font-size: 13px;
+                    color: #bcac76 !important;
+                }
+
+                .text-gray {
+                    color: #dee2e6 !important;
+                }
+
+            }
+
+            .text-gray {
+                color: #dee2e6;
+            }
+
+            .review-item {
+                margin-left: 10px;
+            }
+        }
+
+        .cart-group {
+            .cart-item {
+                display: flex;
+
+                input {
+                    width: 15%;
+                    text-align: center;
+                }
+
+                button {
+                    width: 85%;
+                    border: none;
+                    background: #000;
+                    color: #fff;
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+        .social-category {
+            .wish-list {
+
+                i,
+                a {
+                    cursor: pointer;
+                    color: #bcac76 !important;
+                }
+
+                &:hover {
+                    a {
+                        text-decoration: underline !important;
+                    }
+
+                    i {
+                        color: grey !important;
+                    }
+                }
+            }
+
+            .text-end {
+                i {
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        color: #bcac76;
+                    }
+                }
+            }
+        }
+
+        .bottom-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-top: 55px;
+
+            strong {
+                font-size: 16px;
+            }
+
+            a {
+                color: #60686f !important;
+                font-size: 16px;
+                font-weight: normal;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    // modal new arrival
+
+    #exampleModal {
+        .gallery-top {
+            height: auto !important;
+        }
+
+        .modal-body {
+            padding: 10px 8px;
+        }
+
+        .gallery-thumbs {
+            padding-top: 10px;
+            justify-content: center;
+        }
+
+        .modal-content {
+            height: 200vh !important;
+        }
+
+        .modal-dialog {
+            width: 95% !important;
+        }
+
+        .swiper-modal {
+            flex-direction: column;
+            height: 100vh !important;
+        }
+
+        #main-image {
+            width: 100% !important;
+            height: 350px !important;
+            margin-right: 10px !important;
+        }
+
+        .modal-body {
+            .modal-wrapper {
+                padding: 0 1%;
+            }
+        }
+
+        #thumb-image {
+            max-width: 18.8% !important;
+            height: 76px !important;
+        }
+
+        .modal__index {
+            position: relative;
+
+            .close-btn {
+                position: absolute;
+                top: -65%;
+                right: 4%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    #exampleModal {
+        height: 100vh !important;
+
+        .gallery-top {
+            height: auto !important;
+        }
+
+        .modal-body {
+            padding: 10px 8px;
+        }
+
+        .gallery-thumbs {
+            padding-top: 10px;
+            justify-content: center;
+        }
+
+        .modal-content {
+            height: 200vh !important;
+        }
+
+        .modal-dialog {
+            width: 95% !important;
+        }
+
+        .swiper-modal {
+            flex-direction: column;
+            height: 100vh !important;
+        }
+
+        #main-image {
+            width: 100% !important;
+            height: 566px !important;
+            margin-right: 10px !important;
+        }
+
+        .modal-body {
+            .modal-wrapper {
+                padding: 0 1%;
+            }
+        }
+
+        #thumb-image {
+            max-width: 18.8% !important;
+            height: 76px !important;
+            width: 133.75px !important;
+        }
+
+        .modal__index {
+            position: relative;
+
+            .close-btn {
+                position: absolute;
+                top: -102%;
+                right: 2%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    #exampleModal {
+        height: 100vh !important;
+
+        .gallery-top {
+            height: auto !important;
+        }
+
+        .modal-body {
+            padding: 10px 8px;
+        }
+
+        .gallery-thumbs {
+            padding-top: 10px;
+            justify-content: center;
+        }
+
+        .modal-content {
+            height: 208vh !important;
+        }
+
+        .modal-dialog {
+            width: 56% !important;
+        }
+
+        .swiper-modal {
+            flex-direction: column;
+            height: 100vh !important;
+        }
+
+        #main-image {
+            width: 100% !important;
+            height: 566px !important;
+            margin-right: 10px !important;
+        }
+
+        .modal-body {
+            .modal-wrapper {
+                padding: 0 1%;
+            }
+        }
+
+        #thumb-image {
+            max-width: 18.8% !important;
+            height: 76px !important;
+        }
+
+        .modal__index {
+            position: relative;
+
+            .close-btn {
+                position: absolute;
+                top: -101%;
+                right: 2%;
+            }
+        }
+    }
+}
